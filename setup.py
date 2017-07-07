@@ -1,13 +1,13 @@
 from setuptools import setup
 
 setup(
-    name='dice',
+    name='cube',
     version='1.0',
-    description='Dice application code.',
-    url='http://github.com/alcalyn/dice',
+    description='Cube application code.',
+    url='http://github.com/alcalyn/cube',
     author='Alcalyn',
     author_email='doubjulien@hotmail.fr',
     license='AGPL-3.0',
-    packages=['dice'],
+    packages=['cube'],
     zip_safe=False
 )

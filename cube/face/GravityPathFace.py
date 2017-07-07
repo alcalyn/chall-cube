@@ -8,11 +8,11 @@ class GravityPathFace(Face):
         self.accelerometer = accelerometer
 
     def start(self):
-        self.display('Running gravity path face.')
+        print('Running gravity path face.')
 
         while True:
             current_face = self.accelerometer.get_current_face()
 
-            self.display('Current face: %d' % current_face)
+            print('Current face: %d' % current_face)
 
             sleep(0.8)

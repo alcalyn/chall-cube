@@ -1,8 +1,8 @@
-from dice.sensor.Accelerometer import Accelerometer
-from dice.face.BlankFace import BlankFace
-from dice.face.BlockingFace import BlockingFace
-from dice.face.GravityPathFace import GravityPathFace
-from dice.Dice import Dice
+from cube.sensor.Accelerometer import Accelerometer
+from cube.face.BlankFace import BlankFace
+from cube.face.BlockingFace import BlockingFace
+from cube.face.GravityPathFace import GravityPathFace
+from cube.Cube import Cube
 
 accelerometer = Accelerometer()
 
@@ -15,6 +15,6 @@ faces = [
     BlankFace()
 ]
 
-dice = Dice(faces)
+dice = Cube(faces)
 
 dice.start()

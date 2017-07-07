@@ -8,6 +8,6 @@ class BlockingFace(Face):
         self.time = time
 
     def start(self):
-        self.display('Face running %d seconds...' % self.time)
+        print('Face running %d seconds...' % self.time)
         sleep(self.time)
-        self.display('End of %d seconds.' % self.time)
+        print('End of %d seconds.' % self.time)

@@ -1,7 +1,7 @@
 from threading import Thread
 
 
-class Dice:
+class Cube:
 
     def __init__(self, faces):
         self.faces = faces
@@ -11,8 +11,6 @@ class Dice:
         self.threads = []
 
         for face_number, face in enumerate(self.faces, start=1):
-            face.set_face_number(face_number)
-
             thread = Thread(target=face.start)
 
             thread.start()

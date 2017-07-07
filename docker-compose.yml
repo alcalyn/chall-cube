@@ -3,8 +3,8 @@ version: '2'
 services:
     python:
         image: python:3.6
-        container_name: dice_python
+        container_name: cube_python
         volumes:
-            - .:/var/dice
-        working_dir: /var/dice
+            - .:/var/cube
+        working_dir: /var/cube
         command: sleep 1000000
