@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='chall-cube',
-    version='1.0',
+    version='1.0.0',
     description='Base API for RaspberryPi challenges cube.',
     url='http://github.com/alcalyn/chall-cube',
     author='Alcalyn',
