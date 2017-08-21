@@ -1,4 +1,4 @@
-from .adxl345 import ADXL345
+from adxl345 import ADXL345
 
 
 class Accelerometer:
@@ -8,7 +8,7 @@ class Accelerometer:
         self.__dice = [5, 4, 6, 2, 3, 1]
 
     def get_current_face(self):
-        axes = self.__adxl345.getAxes(True)
+        axes = self.__adxl345.get_axes(True)
         axes = [axes['x'], axes['y'], axes['z']]
         axesAbs = list(map(abs, axes))
         maxIndex = axesAbs.index(max(axesAbs))
