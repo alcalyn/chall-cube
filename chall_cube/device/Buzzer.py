@@ -1,5 +1,6 @@
 from time import sleep
 import RPi.GPIO as GPIO
+from threading import Thread
 
 
 class Buzzer:
@@ -30,3 +31,9 @@ class Buzzer:
             self.low()
             sleep(periode - gap)
             t = t + periode
+
+    def hz_async(self, hz, time):
+        def async():
+            self.hz(hz, time)
+
+        Thread(target=async, daemon=True).start()
