@@ -20,5 +20,8 @@ class Face:
     def start(self):
         self.print('Face starting')
 
+    def test(self):
+        pass
+
     def print(self, message):
         print('%s: %s' % (self.get_name(), message))
